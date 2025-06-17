@@ -12,8 +12,8 @@ email: leesoeun2746@naver.com
 # email_title: Email (Email title override)
 phone: 01024702746
 # phone_title: Phone (Phone title override)
-# website: Your website (eg. https://google.com)(optional)
-# website_title: Web (Website title override)
+website: https://kiritoni.tistory.com/
+website_title: Blog
 
 # Dark Mode (true/false/never)
 darkmode: true
