@@ -65,13 +65,12 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
+        border: weak
         title: Ecok
         link: https://www.ecok.co.kr/
         link_text: https://www.ecok.co.kr/
         additional_links:
-          - title:  깃허브 페이지
+          - title: 깃허브 페이지
             icon: fab fa-github
             url: https://github.com/CSID-DGU/2025-1-SCS4031-NOVA-S5-BE
           - title: 리틀리 페이지
@@ -79,7 +78,7 @@ content:
             url: https://litt.ly/ecok
         quote: >
           카페 브랜딩은 살리고, 적립은 쉽게! 카페 사장님과 고객을 위한 모바일 스탬프 적립 서비스 Ecok
-        description: | # this will include new lines to allow paragraphs
+        description: | 
           ● **팀 구성**  
             PM 1인, FE 2인, BE 1인
 
@@ -98,11 +97,14 @@ content:
 
           ● **수상**  
             동국대학교 2025 여름 종합설계 결과발표회 **장려상** 수상
+
+      - layout: left
+        border: weak
         title: 동국대학교 Farm System 홈페이지
         link: https://www.farmsystem.kr/
         link_text: https://www.farmsystem.kr/
         additional_links:
-          - title:  깃허브 페이지
+          - title: 깃허브 페이지
             icon: fab fa-github
             url: https://github.com/DguFarmSystem/HomePage-BE
           - title: 파밍로그 페이지
@@ -110,8 +112,8 @@ content:
             url: https://farminglog.farmsystem.kr/
         quote: >
           동아리 홍보용 홈페이지 및 동아리 내 커뮤니티 플랫폼 개발
-        description: | # this will include new lines to allow paragraphs   
-         ● **팀 구성**  
+        description: | 
+          ● **팀 구성**  
             FE 4인, BE 3인
 
           ● **상세 역할**  
@@ -146,9 +148,9 @@ content:
     layout: list
     content:
       - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
+        title: 동국대학교
+        sub_title: 경영정보학과, 융합소프트웨어 학사
+        caption: 2021.03 ~ 2026.02 (예정)
         quote: >
           Short institution or course description (optional)
         description: | # this will include new lines to allow paragraphs
