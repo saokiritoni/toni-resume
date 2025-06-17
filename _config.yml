@@ -74,6 +74,9 @@ content:
           - title:  깃허브 페이지
             icon: fab fa-github
             url: https://github.com/CSID-DGU/2025-1-SCS4031-NOVA-S5-BE
+          - title: 리틀리 페이지
+            icon: fa-solid fa-link
+            url: https://litt.ly/ecok
         quote: >
           카페 브랜딩은 살리고, 적립은 쉽게! 카페 사장님과 고객을 위한 모바일 스탬프 적립 서비스 Ecok
         description: | # this will include new lines to allow paragraphs
