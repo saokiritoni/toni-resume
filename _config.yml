@@ -131,6 +131,36 @@ content:
             - NGINX를 활용한 Blue/Green 무중단 배포 전략 적용  
             - 운영/테스트 서버 분리 및 상태 관리 체계 수립
 
+  - title: Awards
+    layout: list
+    content:
+      - layout: right
+        title: KDT 해커톤 최우수상 (고용노동부장관상)
+        sub_title: 고용노동부, 한국기술교육대학교
+        caption: 2024.11
+        quote: >
+          저출산/고령사회에 필요한 첨단/디지털 서비스 개발
+        description: | # this will include new lines to allow paragraphs  
+          난임 부부 종합 케어 솔루션 듀오블룸
+          
+      - layout: right
+        title: 동국대학교 2024 AI 융합 해커톤 대상
+        sub_title: 동국대학교 AI 융합대학
+        caption: 2024.11
+        quote: >
+          종합설계 프로젝트 학생제안 주제발굴을 위한 동국대학교 아코톤 - 스마트 캠퍼스를 위한 디지털 융합 제품 혹은 소프트웨어 개발
+        description: | # this will include new lines to allow paragraphs
+          E-N-C 기반 위험 대응 및 안심 캠퍼스 구축 시스템
+
+      - layout: right
+        title: 동국대학교 2025 여름 종합설계 결과발표회 장려상
+        sub_title: 동국대학교 소프트웨어교육원
+        caption: 2025.06
+        quote: >
+          종합설계 프로젝트 학생제안 주제발굴을 위한 스마트 캠퍼스를 위한 디지털 융합 제품 혹은 소프트웨어 개발 해커톤
+        description: | # this will include new lines to allow paragraphs
+          카페 브랜딩은 살리고, 적립은 쉽게! 카페 사장님과 고객을 위한 모바일 스탬프 적립 서비스 Ecok
+          
             
   - title: Experience
     layout: list
@@ -144,6 +174,7 @@ content:
           Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
           Description of role
+
   - title: Education
     layout: list
     content:
@@ -151,10 +182,14 @@ content:
         title: 동국대학교
         sub_title: 경영정보학과, 융합소프트웨어 학사
         caption: 2021.03 ~ 2026.02 (예정)
-        quote: >
-          Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of qualification
+        # quote: >
+        #   Short institution or course description (optional)
+        # description: | # this will include new lines to allow paragraphs
+        #   Description of qualification
+      - layout: top-right
+        title: 구름 x 인프런 자바 스프링 & 리액트 풀스택 개발자 과정
+        sub_title: 주식회사구름
+        caption: 2023.12 ~ 2024.07
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
