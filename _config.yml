@@ -81,35 +81,35 @@ content:
           카페 브랜딩은 살리고, 적립은 쉽게! <br>
           카페 사장님과 고객을 위한 모바일 스탬프 적립 서비스 Ecok
         description: | 
-          ● **팀 구성**  
+          ● **Teams**  
             PM 1인, FE 2인, BE 1인
 
-          ● **상세 역할**  
+          ● **Roles**  
             백엔드 개발 및 인프라 구축 전반을 담당
 
-          ● **`Spring Boot 3.x`, `Java 17` 기반 REST API 개발**  <br>
-          - ⭐️ 스탬프 적립 로직에 대한 동시성 제어 (비관적 락 적용)  <br>
+          ● **`Spring Boot 3.x` `Java 17` 기반 REST API 개발**  <br>
+          - ★ 스탬프 적립 로직에 대한 동시성 제어 (비관적 락 적용)  <br>
           > • **S (Situation)**: 모바일 스탬프 적립 과정에서 여러 요청이 동시에 들어오면 중복 적립 문제가 발생했습니다.  <br>
           > • **T (Task)**: 이를 재현하고 해결하기 위한 동시성 제어 구현이 필요했습니다.  <br>
           > • **A (Action)**  <br>
-          > &nbsp;&nbsp;&nbsp;&nbsp;- `curl`을 통해 동시 요청 테스트로 Race Condition을 재현했습니다. <br>
-          > &nbsp;&nbsp;&nbsp;&nbsp;- `@Lock(PESSIMISTIC_WRITE)`로 비관적 락을 적용했습니다.  <br>
+          > &nbsp;&nbsp;&nbsp;&nbsp;- curl을 통해 동시 요청 테스트로 Race Condition을 재현했습니다. <br>
+          > &nbsp;&nbsp;&nbsp;&nbsp;- @Lock(PESSIMISTIC_WRITE)로 비관적 락을 적용했습니다.  <br>
           > • **R (Result)**  <br>
           > &nbsp;&nbsp;&nbsp;&nbsp;- 중복 적립 없이 하나의 요청만 반영됨을 확인했습니다. <br>
           > &nbsp;&nbsp;&nbsp;&nbsp;- 데이터 정합성과 서비스 신뢰성 확보할 수 있었습니다. <br>
 
-          △ `Kakao OAuth2` + `JWT` + `Redis` 기반 로그인/세션 관리  
-          △ `Spring Security` 기반 접근 권한 분리 (일반회원/사장/직원)
-          △ `AWS S3` `Presinged URL` 기반 스탬프북 커스텀 이미지 업로드 API 설계 및 구현
-          △ `Swagger-ui` 기반 REST API 문서화  
+          △ `Kakao OAuth2` + `JWT` + `Redis` 기반 로그인/세션 관리  <br>
+          △ `Spring Security` 기반 접근 권한 분리 (일반회원/사장/직원) <br>
+          △ `AWS S3` `Presinged URL` 기반 스탬프북 커스텀 이미지 업로드 API 설계 및 구현 <br>
+          △ `Swagger-ui` 기반 REST API 문서화  <br>
           
 
           ● **Infra**  
             - `GitHub Actions` / `AWS EC2` / `Docker`를 활용한 배포 차동화 구축
-            - Route53, ALB를 포함한 클라우드 인프라 설계 및 도메인 연결  
+            - `Route53`, `ALB`를 포함한 클라우드 인프라 설계 및 도메인 연결  
             - 운영/테스트 서버 분리, EC2 환경에서 실시간 모니터링 및 롤백 대응
 
-          ● **수상**  
+          ● **Awards**  
             동국대학교 2025 여름 종합설계 결과발표회 **장려상** 수상
 
 
@@ -129,33 +129,33 @@ content:
         quote: >
           동아리 홍보용 홈페이지 및 동아리 내 커뮤니티 플랫폼 개발
         description: |
-          ● **팀 구성**  
+          ● **Teams**  
             FE 4인, BE 3인
 
-          ● **상세 역할**  
-            팀장 및 백엔드 개발, 인프라 설계/구축 전반을 담당
+          ● **Roles**  
+            팀 리더 및 백엔드 개발, 인프라 설계/구축 전반을 담당
 
-          ● **`Spring Boot 3.x`, `Java 17` 기반 REST API 개발**  
-            - `Spring Security` 기반 접근 권한 분리 (동아리 운영진 / 일반 유저)  
-            - 파밍로그(동아리 내 지식 공유 플랫폼) API 설계 및 구현  
-            - 소식, 블로그/프로젝트 일반 유저 및 관리자용 API 설계 및 구현  
-            - `Swagger-ui`를 통한 API 문서화 작업  
+          ● **`Spring Boot 3.x`, `Java 17` 기반 REST API 개발**  <br>
+            - `Spring Security` 기반 접근 권한 분리 (동아리 운영진 / 일반 유저)  <br>
+            - 파밍로그(동아리 내 지식 공유 플랫폼) API 설계 및 구현  <br>
+            - 소식, 블로그/프로젝트 일반 유저 및 관리자용 API 설계 및 구현  <br>
+            - `Swagger-ui`를 통한 API 문서화 작업  <br>
 
-          ● **DevOps**  
-            - `GitHub Actions` / `AWS EC2` / `Docker` 기반 배포 자동화 구축
-            - `Route53`, `ALB`, `AWS WAF` 포함 인프라 아키텍처 설계  
-            - 운영/테스트 서버 분리 및 상태 관리 체계 수립
-            - ⭐️ **Blue/Green 무중단 배포 전략 적용 (`Nginx` 기반)**  <br>
+          ● **Infra**  
+            - `GitHub Actions` / `AWS EC2` / `Docker` 기반 배포 자동화 구축 <br>
+            - `Route53`, `ALB`, `AWS WAF` 포함 인프라 아키텍처 설계  <br>
+            - 운영/테스트 서버 분리 및 상태 관리 체계 수립 <br>
+            - ★ **Blue/Green 무중단 배포 전략 적용 (`Nginx` 기반)**  <br>
               > • **S (Situation)**: 지원서 제출 기능이 있어 배포 중단이 치명적인 상황이었습니다. <br>
               > • **T (Task)**: 지원하는 학생들에게 영향 없이 안전하게 배포할 수 있는 무중단 전략이 필요했습니다.  <br>
-              > • **A (Action)** : `Nginx`를 활용한 Blue/Green 무중단 배포 구조를 적용했습니다.    <br>
+              > • **A (Action)** : Nginx를 활용한 Blue/Green 무중단 배포 구조를 적용했습니다.    <br>
               > • **R (Result)**: 새로운 버전 배포 후 정상 동작을 확인한 뒤 트래픽이 전환되어 서비스 중단 없이 배포가 이루어질 수 있었습니다. <br>
 
-            - ⭐️ **`GitHub Release` + `Docker` 이미지 버전 관리 체계 도입**  <br>
+            - ★ **`GitHub Release` + `Docker` 이미지 버전 관리 체계 도입**  <br>
               > • **S (Situation)**: 팀원 증가로 인해 이미지 버전 관리가 어려웠습니다. <br>
-              > • **T (Task)**: `Docker` 이미지에 적절한 태그를 붙여 이미지를 빌드해야 했습니다. <br>
+              > • **T (Task)**: Docker 이미지에 적절한 태그를 붙여 이미지를 빌드해야 했습니다. <br>
               > • **A (Action)**: Gihub Release Tag 기준으로 이미지를 빌드하도록 CI/CD 스크립트를 수정했습니다.  <br>
-              > • **R (Result)**: `Docker` 이미지 버전 관리가 용이해져 협업 효율성이 향상되었습니다. <br>
+              > • **R (Result)**: Docker 이미지 버전 관리가 용이해져 협업 효율성이 향상되었습니다. <br>
 
 
 
@@ -197,13 +197,13 @@ content:
         quote: >
           GPU 서버 12대와 네트워크 관리
         description: | # this will include new lines to allow paragraphs
-          ● `GPU server`, `Storage server`, `NAS`, `Firewall(pfSense)`, `Linux System`, `Docker container system`, 네트워크 장비 관리 <br>
+          ● `GPU server`, `Storage server`, `NAS`, `Firewall(pfSense)`, `Linux System`, `Docker container system`, `네트워크 장비 관리` <br>
           ● 교수 및 학생들이 서버를 사용할 수 있도록 하기 위해 필요한 모든 업무 <br>
-          **⭐️ `Kubernetes` 기반 리소스 관리 자동화**  <br>
+          **★ `Kubernetes` 기반 리소스 관리 자동화**  <br>
           > • **S (Situation)**: 다양한 사양의 GPU 서버 12대를 수동으로 관리하며, 자원 확인과 컨테이너 배치 관련 문서가 일관적이지 않는 문제가 지속적으로 발생해왔습니다. <br>
           > • **T (Task)**: 제한된 자원을 효율적으로 분배하면서도, 관리자가 쉽게 사용할 수 있는 시스템이 필요했습니다.  <br>
           > • **A (Action)**  <br>
-          > &nbsp;&nbsp;&nbsp;&nbsp;- 온프레미스 환경에서 쿠버네티스 클러스터를 구성하고, `Helm` 기반 배포 자동화 파이프라인을 설계하였습니다. <br>
+          > &nbsp;&nbsp;&nbsp;&nbsp;- 온프레미스 환경에서 쿠버네티스 클러스터를 구성하고, Helm기반 배포 자동화 파이프라인을 설계하였습니다. <br>
           > &nbsp;&nbsp;&nbsp;&nbsp;- 서버 스펙 및 자원 사용 현황을 통합 조회할 수 있는 관리자 전용 웹 백엔드를 개발하고 있습니다. <br>
           > • **R (Result)**: 진행중입니다!  <br>      
 
