@@ -102,7 +102,7 @@ content:
           > &nbsp;&nbsp;&nbsp;&nbsp;- 중복 적립 없이 하나의 요청만 반영됨을 확인했습니다. <br>
           > &nbsp;&nbsp;&nbsp;&nbsp;- 데이터 정합성과 서비스 신뢰성 확보할 수 있었습니다. <br>
           - `Kakao OAuth2` + `JWT` + `Redis` 기반 로그인/세션 관리  <br>
-          - `Spring Security` 기반 접근 권한 분리 (일반회원/사장/직원) <br>
+          - [`Spring Security` 기반 접근 권한 분리(일반회원/사장/직원)](https://kiritoni.tistory.com/43) <br> 
           - `AWS S3` `Presinged URL` 기반 스탬프북 커스텀 이미지 업로드 API 설계 및 구현 <br>
           - `Swagger-ui` 기반 REST API 문서화  <br>
           
@@ -110,7 +110,7 @@ content:
           ● **Infra**  
             - `GitHub Actions` / `AWS EC2` / `Docker`를 활용한 배포 차동화 구축
             - `Route53`, `ALB`를 포함한 클라우드 인프라 설계 및 도메인 연결  
-            - 운영/테스트 서버 분리, EC2 환경에서 실시간 모니터링 및 롤백 대응
+            - 운영/테스트 서버(`EC2`) 분리
 
           ● **Awards**  
             - 동국대학교 2025 여름 종합설계 결과발표회 **장려상** 수상
