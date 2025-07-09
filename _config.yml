@@ -100,7 +100,7 @@ content:
           > &nbsp;&nbsp;&nbsp;&nbsp;- @Lock(PESSIMISTIC_WRITE)로 비관적 락을 적용했습니다.  <br>
           > • **R (Result)**  <br>
           > &nbsp;&nbsp;&nbsp;&nbsp;- 중복 적립 없이 하나의 요청만 반영됨을 확인했습니다. <br>
-          > &nbsp;&nbsp;&nbsp;&nbsp;- 데이터 정합성과 서비스 신뢰성 확보할 수 있었습니다. <br>
+          > &nbsp;&nbsp;&nbsp;&nbsp;- 데이터 정합성과 서비스 신뢰성을 확보할 수 있었습니다. <br>
           - `Kakao OAuth2` + `JWT` + `Redis` 기반 로그인/세션 관리  <br>
           - [`Spring Security` 기반 접근 권한 분리(일반회원/사장/직원)](https://kiritoni.tistory.com/43) <br> 
           - `AWS S3` `Presinged URL` 기반 스탬프북 커스텀 이미지 업로드 API 설계 및 구현 <br>
@@ -142,7 +142,7 @@ content:
             - `Spring Security` 기반 접근 권한 분리 (동아리 운영진 / 일반 유저)  <br>
             - 파밍로그(동아리 내 지식 공유 플랫폼) API 설계 및 구현  <br>
             - 소식, 블로그/프로젝트 일반 유저 및 관리자용 API 설계 및 구현  <br>
-            - `Swagger-ui`를 통한 API 문서화 작업  <br>
+            - `Swagger-ui` 기반 REST API 문서화  <br>
 
           ● **Infra**  
             - `GitHub Actions` / `AWS EC2` / `Docker` 기반 배포 자동화 구축 <br>
