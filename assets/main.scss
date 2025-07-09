@@ -1,20 +1,6 @@
 @import 'modern-resume-theme';
 
 body {
-  background-color: #1E4174;
-  color: #DDA94B;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
 }
 
-a {
-  color: #DDA94B;
-
-  &:hover {
-    color: lighten(#DDA94B, 10%);
-  }
-}
-
-h1, h2, h3, h4, h5, h6,
-.title, .subtitle {
-  color: #DDA94B;
-}
