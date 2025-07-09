@@ -97,11 +97,10 @@ content:
           > • **R (Result)**  <br>
           > &nbsp;&nbsp;&nbsp;&nbsp;- 중복 적립 없이 하나의 요청만 반영됨을 확인했습니다. <br>
           > &nbsp;&nbsp;&nbsp;&nbsp;- 데이터 정합성과 서비스 신뢰성 확보할 수 있었습니다. <br>
-
-          △ `Kakao OAuth2` + `JWT` + `Redis` 기반 로그인/세션 관리  <br>
-          △ `Spring Security` 기반 접근 권한 분리 (일반회원/사장/직원) <br>
-          △ `AWS S3` `Presinged URL` 기반 스탬프북 커스텀 이미지 업로드 API 설계 및 구현 <br>
-          △ `Swagger-ui` 기반 REST API 문서화  <br>
+          - `Kakao OAuth2` + `JWT` + `Redis` 기반 로그인/세션 관리  <br>
+          - `Spring Security` 기반 접근 권한 분리 (일반회원/사장/직원) <br>
+          - `AWS S3` `Presinged URL` 기반 스탬프북 커스텀 이미지 업로드 API 설계 및 구현 <br>
+          - `Swagger-ui` 기반 REST API 문서화  <br>
           
 
           ● **Infra**  
@@ -110,7 +109,7 @@ content:
             - 운영/테스트 서버 분리, EC2 환경에서 실시간 모니터링 및 롤백 대응
 
           ● **Awards**  
-            동국대학교 2025 여름 종합설계 결과발표회 **장려상** 수상
+            - 동국대학교 2025 여름 종합설계 결과발표회 **장려상** 수상
 
 
       - layout: left
@@ -197,7 +196,7 @@ content:
         quote: >
           GPU 서버 12대와 네트워크 관리
         description: | # this will include new lines to allow paragraphs
-          ● `GPU server`, `Storage server`, `NAS`, `Firewall(pfSense)`, `Linux System`, `Docker container system`, `네트워크 장비 관리` <br>
+          ● `GPU server` `Storage server` `NAS` `Firewall(pfSense)` `Linux System` `Docker container system` `네트워크 장비 관리` <br>
           ● 교수 및 학생들이 서버를 사용할 수 있도록 하기 위해 필요한 모든 업무 <br>
           **★ `Kubernetes` 기반 리소스 관리 자동화**  <br>
           > • **S (Situation)**: 다양한 사양의 GPU 서버 12대를 수동으로 관리하며, 자원 확인과 컨테이너 배치 관련 문서가 일관적이지 않는 문제가 지속적으로 발생해왔습니다. <br>
