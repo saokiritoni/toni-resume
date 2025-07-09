@@ -16,7 +16,7 @@ website: https://kiritoni.tistory.com/
 website_title: Blog
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: true
 
 # Social links
 # twitter_username: jekyllrb
