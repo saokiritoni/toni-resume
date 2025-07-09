@@ -70,6 +70,8 @@ content:
         title: Ecok
         link: https://www.ecok.co.kr/
         link_text: https://www.ecok.co.kr/
+        link: https://www.youtube.com/watch?v=6LVxq7zQSeE
+        link_text: 화면녹화영상
         additional_links:
           - title: 깃허브 페이지
             icon: fab fa-github
