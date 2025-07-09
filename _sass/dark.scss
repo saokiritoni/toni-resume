@@ -1,15 +1,30 @@
 .dark {
-  background-color: #222;
-  color: #e6e6e6;
-}
+  background-color: #1E4174; // 배경색
+  color: #DDA94B;            // 기본 글자색
 
-.dark {
   mark {
-    color: #222;
-    background-color: #e6e6e6;
+    color: #1E4174;
+    background-color: #DDA94B;
   }
 
   a {
-    color: #477dca;
+    color: #DDA94B;
+
+    &:hover {
+      color: lighten(#DDA94B, 10%);
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .title, .subtitle {
+    color: #DDA94B;
+  }
+
+  .card,
+  .section,
+  .sidebar {
+    background-color: #1E4174;
+    color: #DDA94B;
+    border-color: lighten(#1E4174, 10%);
   }
 }
