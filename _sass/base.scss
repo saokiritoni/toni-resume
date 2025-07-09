@@ -5,10 +5,10 @@
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
-  background-color: #477dca;
+  background-color: #333333;
   border: 0;
   border-radius: 3px;
-  color: #fff;
+  color: #e5e5e5;
   cursor: pointer;
   display: inline-block;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -27,13 +27,13 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   input[type="button"]:focus, input[type="reset"]:hover,
   input[type="reset"]:focus, input[type="submit"]:hover,
   input[type="submit"]:focus {
-    background-color: #3964a2;
-    color: #fff; }
+    background-color: #333333;
+    color: #e5e5e5; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
     button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
-      background-color: #477dca; }
+      background-color: #333333; }
 
 fieldset {
   background-color: #f7f7f7;
@@ -130,7 +130,7 @@ html {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 0;
-  background: #DEDEDE;
+  background: #e5e5e5;
   color: #4C4C4C; }
   .btn:focus {
     background: #DEDEDE;
@@ -141,13 +141,13 @@ html {
   .btn:active {
     top: 2px; }
   .btn.disabled {
-    background: #EAEAEA;
+    background: #e5e5e5;
     color: #9E9E9E;
     cursor: default;
     top: 0px; }
 
 body {
-  background: #ffffff;
+  background: #e5e5e5;
   font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased; }
 
