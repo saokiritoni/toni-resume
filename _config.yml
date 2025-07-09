@@ -16,7 +16,7 @@ website: https://kiritoni.tistory.com/
 website_title: Blog
 
 # Dark Mode (true/false/never)
-darkmode: true
+darkmode: false
 
 # Social links
 # twitter_username: jekyllrb
@@ -50,6 +50,7 @@ linkedin_username: saokiritoni
 
 # About Section
 # about_title: About Me (Use this to override about section title)
+# 폰트 컬러 바꾸기: <span style="color:#e74c3c"> </span> 사용
 about_profile_image: images/profile_toni.jpeg
 about_content: | # this will include new lines to allow paragraphs
   안녕하세요, 소통하며 함께 자라는 대학생 <mark>백엔드 개발자</mark> 이소은입니다.
