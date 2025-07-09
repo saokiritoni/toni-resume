@@ -88,20 +88,21 @@ content:
             백엔드 개발 및 인프라 구축 전반을 담당
 
           ● **Spring Boot 3.x, Java 17 기반 REST API 개발**  
-            △ 스탬프 적립 로직에 대한 동시성 제어 (비관적 락 적용) <br>
-              ▶ S(Situation): 모바일 스탬프 적립 과정에서, 여러 요청에 동시에 스탬프 적립 요청을 보낼 경우 중복 적립이 발생하는 문제가 있었습니다. <br>
-              ▶ T (Task): Race Condition이 발생하는 상황을 재현하고, 이를 해결할 수 있도록 스탬프 적립 로직에 대한 동시성 제어를 구현해야 했습니다. <br>
-              ▶ A (Action) <br>
-              - curl 스크립트를 통해 적립 API에 대해 동시에 여러 요청을 보내는 테스트를 수행하고, Race Condition을 직접 재현했습니다. <br>
-              - 문제 재현 후, Spring Data JPA의 @Lock(LockModeType.PESSIMISTIC_WRITE) 어노테이션을 활용해 비관적 락을 적용했습니다. <br>
-              - 스탬프 적립 시 해당 사용자의 스탬프북 엔티티를 먼저 락으로 선점하여, 동일한 시점에 하나의 요청만 적립을 처리할 수 있도록 제어했습니다. <br>
-              ▶ R (Result) <br>
-              - 중복 적립 없이 정확하게 한 번만 적립되도록 문제를 해결했습니다. <br>
-              - 테스트 결과, 여러 요청이 동시에 들어와도 정상적으로 순차 처리되어 데이터 정합성이 유지됨을 확인했습니다. <br>
-              - 실시간 적립 서비스의 신뢰성과 일관성을 확보하는 중요한 개선임을 느꼈습니다. <br>
-            △ Kakao OAuth2 + JWT + Redis를 통한 인증 및 세션 관리 <br>
-            △ Spring Security 기반 접근 권한 분리 (일반회원/사장/직원) <br>
-            △ Swagger-ui를 통한 API 문서화 작업 <br>
+          > △ 스탬프 적립 로직에 대한 동시성 제어 (비관적 락 적용)  
+          > • **S (Situation)**: 모바일 스탬프 적립 과정에서 여러 요청이 동시에 들어오면 중복 적립 문제가 발생했습니다.  
+          > • **T (Task)**: 이를 재현하고 해결하기 위한 동시성 제어 구현이 필요했습니다.  
+          > • **A (Action)**  
+          > &nbsp;&nbsp;&nbsp;&nbsp;- `curl`을 통해 동시 요청 테스트로 Race Condition을 재현  
+          > &nbsp;&nbsp;&nbsp;&nbsp;- `@Lock(PESSIMISTIC_WRITE)`로 비관적 락 적용  
+          > &nbsp;&nbsp;&nbsp;&nbsp;- 스탬프북 엔티티 락으로 동시 요청 제어  
+          > • **R (Result)**  
+          > &nbsp;&nbsp;&nbsp;&nbsp;- 중복 적립 없이 하나의 요청만 반영됨  
+          > &nbsp;&nbsp;&nbsp;&nbsp;- 데이터 정합성과 서비스 신뢰성 확보  
+
+          △ Kakao OAuth2 + JWT + Redis 기반 로그인/세션 관리  
+          △ Spring Security 기반 접근 권한 분리 (일반회원/사장/직원)  
+          △ Swagger-ui 기반 REST API 문서화  
+          
 
           ● **DevOps**  
             - GitHub Actions / AWS EC2 / Docker를 활용한 배포 차동화 구축
