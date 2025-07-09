@@ -87,16 +87,16 @@ content:
           ● **상세 역할**  
             백엔드 개발 및 인프라 구축 전반을 담당
 
-          ● **Spring Boot 3.x, Java 17 기반 REST API 개발**  
-          △ ⭐️ 스탬프 적립 로직에 대한 동시성 제어 (비관적 락 적용)  
-          > • **S (Situation)**: 모바일 스탬프 적립 과정에서 여러 요청이 동시에 들어오면 중복 적립 문제가 발생했습니다.  
-          > • **T (Task)**: 이를 재현하고 해결하기 위한 동시성 제어 구현이 필요했습니다.  
-          > • **A (Action)**  
-          > &nbsp;&nbsp;&nbsp;&nbsp;- `curl`을 통해 동시 요청 테스트로 Race Condition을 재현했습니다.
-          > &nbsp;&nbsp;&nbsp;&nbsp;- `@Lock(PESSIMISTIC_WRITE)`로 비관적 락을 적용했습니다.  
-          > • **R (Result)**  
-          > &nbsp;&nbsp;&nbsp;&nbsp;- 중복 적립 없이 하나의 요청만 반영됨을 확인했습니다. 
-          > &nbsp;&nbsp;&nbsp;&nbsp;- 데이터 정합성과 서비스 신뢰성 확보할 수 있었습니다. 
+          ● **Spring Boot 3.x, Java 17 기반 REST API 개발**  <br>
+          - ⭐️ 스탬프 적립 로직에 대한 동시성 제어 (비관적 락 적용)  <br>
+          > • **S (Situation)**: 모바일 스탬프 적립 과정에서 여러 요청이 동시에 들어오면 중복 적립 문제가 발생했습니다.  <br>
+          > • **T (Task)**: 이를 재현하고 해결하기 위한 동시성 제어 구현이 필요했습니다.  <br>
+          > • **A (Action)**  <br>
+          > &nbsp;&nbsp;&nbsp;&nbsp;- `curl`을 통해 동시 요청 테스트로 Race Condition을 재현했습니다. <br>
+          > &nbsp;&nbsp;&nbsp;&nbsp;- `@Lock(PESSIMISTIC_WRITE)`로 비관적 락을 적용했습니다.  <br>
+          > • **R (Result)**  <br>
+          > &nbsp;&nbsp;&nbsp;&nbsp;- 중복 적립 없이 하나의 요청만 반영됨을 확인했습니다. <br>
+          > &nbsp;&nbsp;&nbsp;&nbsp;- 데이터 정합성과 서비스 신뢰성 확보할 수 있었습니다. <br>
 
           △ Kakao OAuth2 + JWT + Redis 기반 로그인/세션 관리  
           △ Spring Security 기반 접근 권한 분리 (일반회원/사장/직원)  
@@ -141,6 +141,9 @@ content:
             - Swagger-ui를 통한 API 문서화 작업  
 
           ● **DevOps**  
+            - GitHub Actions / AWS EC2 / Docker 기반 배포 자동화 구축
+            - Route53, ALB, WAF 포함 인프라 아키텍처 설계  
+            - 운영/테스트 서버 분리 및 상태 관리 체계 수립
             - ⭐️ **Blue/Green 무중단 배포 전략 적용 (Nginx 기반)**  
               > • **S (Situation)**: 지원서 제출 기능이 있어 배포 중단이 치명적인 상황이었습니다.  
               > • **T (Task)**: 지원하는 학생들에게 영향 없이 안전하게 배포할 수 있는 무중단 전략이 필요했습니다.  
@@ -150,52 +153,12 @@ content:
               > • **R (Result)**  
               > &nbsp;&nbsp;&nbsp;&nbsp;- 서비스 중단 없이 배포가 이루어질 수 있었습니다.
 
-            - ⭐️ **GitHub Release + Docker 이미지 버전 관리 체계 도입**  
-              > • **S (Situation)**: 팀원 증가로 인해 이미지 버전 관리가 어려웠습니다. 
-              > • **T (Task)**: Docker 이미지에 적절한 태그를 붙여 이미지를 빌드해야 했습니다. 
-              > • **A (Action)**: Gihub 릴리즈 태그 기준으로 이미지를 빌드하도록 CI/CD 스크립트를 수정했습니다.  
-              > • **R (Result)**: Docker 이미지 버전 관리가 용이해져 협업 효율성이 향상되었습니다. 
+            - ⭐️ **GitHub Release + Docker 이미지 버전 관리 체계 도입**  <br>
+              > • **S (Situation)**: 팀원 증가로 인해 이미지 버전 관리가 어려웠습니다. <br>
+              > • **T (Task)**: Docker 이미지에 적절한 태그를 붙여 이미지를 빌드해야 했습니다. <br>
+              > • **A (Action)**: Gihub 릴리즈 태그 기준으로 이미지를 빌드하도록 CI/CD 스크립트를 수정했습니다.  <br>
+              > • **R (Result)**: Docker 이미지 버전 관리가 용이해져 협업 효율성이 향상되었습니다. <br>
 
-          ● **Infra**  
-            - GitHub Actions / AWS EC2 / Docker 기반 배포 자동화 구축  
-            - Route53, ALB, WAF 포함 인프라 아키텍처 설계  
-            - 운영/테스트 서버 분리 및 상태 관리 체계 수립
-
-
-
-      - layout: left
-        border: weak
-        title: 동국대학교 Farm System 홈페이지
-        link: https://www.farmsystem.kr/
-        link_text: https://www.farmsystem.kr/
-        additional_links:
-          - title: 깃허브 페이지
-            icon: fab fa-github
-            url: https://github.com/DguFarmSystem/HomePage-BE
-          - title: 파밍로그 페이지
-            icon: fas fa-seedling
-            url: https://farminglog.farmsystem.kr/
-          - title: 2025.02 ~ 현재
-        quote: >
-          동아리 홍보용 홈페이지 및 동아리 내 커뮤니티 플랫폼 개발
-        description: | 
-          ● **팀 구성**  
-            FE 4인, BE 3인
-
-          ● **상세 역할**  
-            팀장 및 백엔드 개발, 인프라 설계/구축 전반을 담당
-
-          ● **Spring Boot 3.x, Java 17 기반 REST API 개발**  
-            - Spring Security 기반 접근 권한 분리 (관리자 / 일반 유저)  
-            - 파밍로그(동아리 내 지식 공유 플랫폼) API 설계 및 구현  
-            - 소식, 블로그/프로젝트 일반 유저 및 관리자용 API 설계 및 구현
-            - Swagger-ui를 통한 API 문서화 작업
-
-          ● **DevOps**  
-            - GitHub Actions / AWS EC2 / Docker 기반 배포 자동화 구축
-            - Route53, ALB, WAF를 포함한 인프라 아키텍처 설계  
-            - NGINX를 활용한 Blue/Green 무중단 배포 전략 적용  
-            - 운영/테스트 서버 분리 및 상태 관리 체계 수립
 
 
   - title: Awards
@@ -238,14 +201,15 @@ content:
         description: | # this will include new lines to allow paragraphs
           ● GPU server, Storage server, NAS, Firewall(pfSense), Linux System, Docker container system, 네트워크 장비 관리 <br>
           ● 교수 및 학생들이 서버를 사용할 수 있도록 하기 위해 필요한 모든 업무 <br>
-          **⭐️ 쿠버네티스 기반 리소스 관리 자동화**  
-          > • **S (Situation)**: 다양한 사양의 GPU 서버 12대를 수동으로 관리하며, 자원 확인과 컨테이너 배치 관련 문서가 일관적이지 않는 문제가 발생해왔습니다.
-          > • **T (Task)**: 제한된 자원을 효율적으로 분배하면서도, 관리자가 쉽게 사용할 수 있는 시스템이 필요했습니다.  
-          > • **A (Action)**  
-          > &nbsp;&nbsp;&nbsp;&nbsp;- 온프레미스 환경에서 쿠버네티스 클러스터를 구성하고, Helm 기반 CI/CD 배포 구조를 설계하였습니다. 
-          > &nbsp;&nbsp;&nbsp;&nbsp;- 서버 스펙 및 자원 사용 현황을 통합 조회할 수 있는 관리자 전용 웹 백엔드를 개발하고 있습니다. 
-          > • **R (Result)**  
-          > 진행중입니다.        
+          **⭐️ 쿠버네티스 기반 리소스 관리 자동화**  <br>
+          > • **S (Situation)**: 다양한 사양의 GPU 서버 12대를 수동으로 관리하며, 자원 확인과 컨테이너 배치 관련 문서가 일관적이지 않는 문제가 지속적으로 발생해왔습니다. <br>
+          > • **T (Task)**: 제한된 자원을 효율적으로 분배하면서도, 관리자가 쉽게 사용할 수 있는 시스템이 필요했습니다.  <br>
+          > • **A (Action)**  <br>
+          > &nbsp;&nbsp;&nbsp;&nbsp;- 온프레미스 환경에서 쿠버네티스 클러스터를 구성하고, Helm 기반 CI/CD 배포 구조를 설계하였습니다. <br>
+          > &nbsp;&nbsp;&nbsp;&nbsp;- 서버 스펙 및 자원 사용 현황을 통합 조회할 수 있는 관리자 전용 웹 백엔드를 개발하고 있습니다. <br>
+          > • **R (Result)**  <br>
+          > 진행중입니다!  <br>      
+
       - layout: left
         title: 동국대학교 Farm System
         sub_title: 동아리
@@ -273,12 +237,12 @@ content:
         title: 구름 x 인프런 자바 스프링 & 리액트 풀스택 개발자 과정
         sub_title: 주식회사구름
         caption: 2023.12 ~ 2024.07
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+  # - title: A Little More About Me
+  #   layout: text
+  #   content: | # this will include new lines to allow paragraphs
+  #     This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+  #     Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
 
 # Footer
 footer_show_references: true
