@@ -77,6 +77,9 @@ content:
           - title: 리틀리 페이지
             icon: fas fa-link
             url: https://litt.ly/ecok
+          - title: 시연영상 (유튜브)
+            icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=6LVxq7zQSeE
           - title: 2025.03 ~ 현재
         quote: >
           카페 브랜딩은 살리고, 적립은 쉽게! <br>
