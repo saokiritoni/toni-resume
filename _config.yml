@@ -159,6 +159,39 @@ content:
               > • **T (Task)**: Docker 이미지에 적절한 태그를 붙여 이미지를 빌드해야 했습니다. <br>
               > • **A (Action)**: Gihub Release Tag 기준으로 이미지를 빌드하도록 CI/CD 스크립트를 수정했습니다.  <br>
               > • **R (Result)**: Docker 이미지 버전 관리가 용이해져 협업 효율성이 향상되었습니다. <br>
+              
+      - layout: left
+        border: weak
+        title: 서버 관리자 업무 자동화 시스템
+        additional_links:
+          - title: 깃허브 페이지
+            icon: fab fa-github
+            url: https://github.com/CSID-DGU/admin_be
+          - title: 2025.07 ~ 현재
+        quote: >
+          동국대학교 GPU 서버 관리자 업무 자동화를 위한 Backend 개발
+        description: |
+          ● **Teams**  
+            FE 1인, BE 2인, Infra 2인
+
+          ● **Roles**  
+            Backend Lead
+
+          ● **`Spring Boot 3.x`, `Java 17` 기반 REST API 개발**  <br>
+            - `Web Cleint` 를 통한 외부 서버와 통신 설정  <br>
+            - 서버 사용 신청 및 관리자 수락 시스템 개발  <br>
+            - UID/GID 할당 및 관리 시스템 개발 <br>
+            - `Swagger-ui` 기반 REST API 문서화  <br>
+
+          ● **Infra**  
+            - 온프레미스 환경에서 쿠버네티스 클러스터를 구성하고, Helm 기반 배포 자동화 파이프라인을 설계 <br>
+            - Github Actions 기반 배포 자동화 파이프라인 설계 구축 <br>
+
+            - ★ **`CQS pattern` 으로 리팩토링**  <br>
+              > • **S (Situation)**: 비즈니스 로직이 길고 복잡하여, 관리가 어려웠습니다. <br>
+              > • **T (Task)**: 이후의 서버관리자가 유지보수하기 용이하도록 리팩토링해야 했습니다. <br>
+              > • **A (Action)**: CQS 패턴으로 리팩토링을 진행했습니다.  <br>
+              > • **R (Result)**: 읽기와 쓰기 작업의 책임 분리를 통해 코드의 명확성과 가독성이 향상되었습니다. <br>        
 
 
 
@@ -201,14 +234,7 @@ content:
           GPU 서버 12대와 네트워크 관리
         description: | # this will include new lines to allow paragraphs
           ● `GPU server` `Storage server` `NAS` `Firewall(pfSense)` `Linux System` `Docker container system` `네트워크 장비 관리` <br>
-          ● 교수 및 학생들이 서버를 사용할 수 있도록 하기 위해 필요한 모든 업무 <br>
-          **★ `Kubernetes` 기반 리소스 관리 자동화**  <br>
-          > • **S (Situation)**: 다양한 사양의 GPU 서버 12대를 수동으로 관리하며, 자원 확인과 컨테이너 배치 관련 문서가 일관적이지 않는 문제가 지속적으로 발생해왔습니다. <br>
-          > • **T (Task)**: 제한된 자원을 효율적으로 분배하면서도, 관리자가 쉽게 사용할 수 있는 시스템이 필요했습니다.  <br>
-          > • **A (Action)**  <br>
-          > &nbsp;&nbsp;&nbsp;&nbsp;- 온프레미스 환경에서 쿠버네티스 클러스터를 구성하고, Helm기반 배포 자동화 파이프라인을 설계하였습니다. <br>
-          > &nbsp;&nbsp;&nbsp;&nbsp;- 서버 스펙 및 자원 사용 현황을 통합 조회할 수 있는 관리자 전용 웹 백엔드를 개발하고 있습니다. <br>
-          > • **R (Result)**: 진행중입니다!  <br>    
+          ● 교수 및 학생들이 서버를 사용할 수 있도록 하기 위해 필요한 모든 업무 <br>  
 
       - layout: left
         title: GDGoC DGU 3rd Server/Cloud Core member
